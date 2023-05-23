@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <title>Edit Company Form - Laravel 9 CRUD Tutorial</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style> 
+    body {
+        color: blue;
+    }
 </head>
 
 <body>
