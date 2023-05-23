@@ -8,6 +8,9 @@
     body{
         color: blue;
     }
+    .search{
+        float: right;
+    }
     </style>
 </head>
 <body>
@@ -19,6 +22,9 @@
                 </div>
                 <div class="pull-right mb-2">
                     <a class="btn btn-success" href="{{ route('companies.create') }}"> Create Company</a>
+                <div class="search">
+                     <input type="text" placeholder="Search..">
+                </div>
                 </div>
             </div>
         </div>
