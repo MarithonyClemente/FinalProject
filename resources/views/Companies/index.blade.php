@@ -6,10 +6,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
     <style>
     body{
-        color: blue;
+        color: black;
     }
     .search{
         float: right;
+    }
+    button {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
     }
     </style>
 </head>
