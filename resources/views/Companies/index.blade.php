@@ -23,7 +23,8 @@
                 <div class="pull-right mb-2">
                     <a class="btn btn-success" href="{{ route('companies.create') }}"> Create Company</a>
                 <div class="search">
-                     <input type="text" placeholder="Search..">
+                    <input type="search" id="query" name="q" placeholder="Search...">
+                    <button>Search</button>
                 </div>
                 </div>
             </div>
