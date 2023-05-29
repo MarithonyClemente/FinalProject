@@ -5,6 +5,7 @@
     <title>Laravel 9 CRUD Tutorial Example</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
     <style>
+    
     body{
         color: black;
     }
@@ -15,6 +16,18 @@
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
+    }
+    button [type=delete]{
+        float: left;
+
+    }
+    .row {
+        background: yellow;
+    }
+    th{
+            background:black;
+            color: white;
+            text-align: center;
     }
     </style>
 </head>
@@ -27,13 +40,18 @@
                 </div>
                 <div class="pull-right mb-2">
                     <a class="btn btn-success" href="{{ route('companies.create') }}"> Create Company</a>
-                <div class="search">
-                    <input type="search" id="query" name="q" placeholder="Search...">
-                    <button>Search</button>
-                </div>
+                
+                    <form action="{{ route('companies.search') }}" method="GET" class="float-right">    
+                        <div class="search">
+                            <input type="search" id="query" name="q" placeholder="Search...">
+                            <button>Search</button>
+                        </div>
+                    </form>
+
                 </div>
             </div>
         </div>
+
         @if ($message = Session::get('success'))
             <div class="alert alert-success">
                 <p>{{ $message }}</p>
@@ -65,10 +83,12 @@
                             </form>
                         </td>
                     </tr>
+                    
                     @endforeach
             </tbody>
         </table>
         {!! $companies->links() !!}
+    
     </div>
 </body>
 </html>
